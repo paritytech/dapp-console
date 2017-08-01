@@ -25,7 +25,7 @@ module.exports = {
     : '#source-map',
   context: __dirname,
   entry: {
-    console: './index.js'
+    bundle: './index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -76,36 +76,36 @@ module.exports = {
         use: [ 'html-loader', 'markdown-loader' ]
       },
       {
-        test: /\.css$/,
-        include: /node_modules\/(?!@parity)*/,
-        use: [ 'style-loader', 'css-loader' ]
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules\/(?!@parity)*/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              localIdentName: '[name]_[local]_[hash:base64:10]',
-              minimize: true,
-              modules: true
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: (loader) => [
-                require('postcss-import'),
-                require('postcss-nested'),
-                require('postcss-simple-vars')
-              ]
-            }
-          }
-        ]
-      },
+  	    test: /\.css$/,
+  	    include: /semantic-ui-css/,
+  	    use: [ 'style-loader', 'css-loader' ]
+  	  },
+  	  {
+  	    test: /\.css$/,
+  	    exclude: /semantic-ui-css/,
+  	    use: [
+  	      'style-loader',
+  	      {
+        		loader: 'css-loader',
+        		options: {
+        		  importLoaders: 1,
+        		  localIdentName: '[name]_[local]_[hash:base64:10]',
+        		  minimize: true,
+        		  modules: true
+        		}
+	      },
+	      {
+    		loader: 'postcss-loader',
+    		options: {
+    		  plugins: (loader) => [
+    		    require('postcss-import'),
+    		    require('postcss-nested'),
+    		    require('postcss-simple-vars')
+    		  ]
+		 }
+	      }
+	    ]
+	  },
       {
         test: /\.(png|jpg)$/,
         use: [ {
@@ -156,10 +156,10 @@ module.exports = {
     fs: 'empty'
   },
   plugins: [
-     new HtmlWebpackPlugin({
-      filename: 'console.html',
+    new HtmlWebpackPlugin({
+      filename: '../index.html',
       template: './index.ejs',
-      chunks: [ 'console' ]
+      chunks: [ 'bundle' ]
     })
   ]
 };
