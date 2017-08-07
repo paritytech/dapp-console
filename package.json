@@ -20,7 +20,6 @@
     "babel-cli": "^6.22.2",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
-    "babel-plugin-lodash": "3.2.11",
     "babel-plugin-react-intl": "2.3.1",
     "babel-plugin-transform-class-properties": "6.23.0",
     "babel-plugin-transform-decorators-legacy": "1.3.4",
@@ -33,7 +32,6 @@
     "babel-preset-es2017": "6.22.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.24.1",
-    "base64-inline-loader": "^1.1.0",
     "css-loader": "^0.28.1",
     "ejs-loader": "0.3.0",
     "eslint": "^4.4.0",
@@ -59,27 +57,26 @@
     "postcss-simple-vars": "4.0.0",
     "react-hot-loader": "3.0.0-beta.6",
     "style-loader": "^0.18.2",
-    "svg-inline-loader": "^0.8.0",
     "url-loader": "^0.5.8",
     "webpack": "3.3.0"
   },
   "dependencies": {
     "@parity/api": "paritytech/js-api",
     "@parity/shared": "paritytech/js-shared",
-    "web3": "0.17.0-beta",
     "base32.js": "0.1.0",
     "bytes": "2.4.0",
     "format-number": "2.0.1",
+    "material-ui": "0.16.5",
     "phoneformat.js": "1.0.3",
+    "react": "15.6.1",
     "react-codemirror": "^0.3.0",
+    "react-dom": "15.6.1",
     "react-element-to-jsx-string": "6.0.0",
     "react-inspector": "paritytech/react-inspector",
     "react-markdown": "2.4.4",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
-    "material-ui": "0.16.5",
+    "rlp": "2.0.0",
     "validator": "6.2.0",
-    "rlp": "2.0.0"
+    "web3": "0.17.0-beta"
   },
   "peerDependencies": {}
 }
