@@ -326,9 +326,9 @@ api.parity.dappsUrl().then(url => {
     web3.eth.tokenReg = TokenReg.at(web3.eth.registry.lookupAddress('tokenreg', 'A'));
   }
 })
-.catch((error) => {
-  console.error(error);
-});
+  .catch((error) => {
+    console.error(error);
+  });
 
 window.api = api;
 window.web3 = web3;

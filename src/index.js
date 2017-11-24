@@ -14,10 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-
 import 'codemirror/addon/dialog/dialog';
 import 'codemirror/addon/dialog/dialog.css';
 import 'codemirror/addon/hint/javascript-hint';
@@ -32,29 +28,9 @@ import 'codemirror/mode/javascript/javascript';
 
 // Custom codemirror style
 import './codemirror.css';
-
-import Application from './Application';
-
-import '@parity/shared/assets/fonts/Roboto/font.css';
-import '@parity/shared/assets/fonts/RobotoMono/font.css';
 import './style.css';
 
-ReactDOM.render(
-  <AppContainer>
-    <Application />
-  </AppContainer>,
-  document.querySelector('#container')
-);
+// import '@parity/shared/assets/fonts/Roboto/font.css';
+// import '@parity/shared/assets/fonts/RobotoMono/font.css';
 
-if (module.hot) {
-  module.hot.accept('./Application/index.js', () => {
-    require('./Application/index.js');
-
-    ReactDOM.render(
-      <AppContainer>
-        <Application />
-      </AppContainer>,
-      document.querySelector('#container')
-    );
-  });
-}
+export default from './Application';

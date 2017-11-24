@@ -141,8 +141,8 @@ export default class Snippets extends Component {
         <span className={ styles.pristine }>
           {
             file.isPristine
-            ? null
-            : '*'
+              ? null
+              : '*'
           }
         </span>
         <span>

@@ -162,7 +162,6 @@ export default class AutocompleteStore {
     };
 
     this.position = nextPosition;
-    return;
   }
 
   @action
@@ -215,7 +214,7 @@ function getAllProperties (object) {
   const propertyNames = {};
 
   while (object) {
-    const prototypeName = object && object.constructor && object.constructor.name || '';
+    const prototypeName = (object && object.constructor && object.constructor.name) || '';
 
     Object.getOwnPropertyNames(object)
       .sort()
