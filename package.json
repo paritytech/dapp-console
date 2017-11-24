@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "scripts": {
-    "build": "react-dapp-scripts build",
+    "build": "NODE_ENV=production react-dapp-scripts build",
     "init": "react-dapp-scripts init",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
@@ -31,13 +31,13 @@
     "react-dom": "16.1.1",
     "react-element-to-jsx-string": "13.1.0",
     "react-event-listener": "^0.5.1",
-    "react-inspector": "2.2.0",
-    "react-markdown": "3.0.1",
+    "react-inspector": "2.2.1",
+    "react-markdown": "3.0.2",
     "scryptsy": "^2.0.0",
     "web3": "1.0.0-beta.26"
   },
   "devDependencies": {
-    "react-dapp-scripts": "file:/home/nicolas/Workspace/Ethcore/react-dapp-scripts",
+    "react-dapp-scripts": "paritytech/react-dapp-scripts",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   }
