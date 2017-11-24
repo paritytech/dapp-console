@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-import { action, map, observable } from 'mobx';
+import { action, observable } from 'mobx';
 
 import { api } from '../parity';
 import { evaluate } from '../utils';
@@ -23,7 +23,7 @@ let instance;
 
 export default class WatchesStore {
   @observable showAdd = false;
-  @observable watches = map();
+  @observable watches = observable.map();
 
   watchesFunctions = {};
 

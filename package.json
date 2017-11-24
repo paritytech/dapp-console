@@ -31,7 +31,7 @@
     "react-dom": "16.1.1",
     "react-element-to-jsx-string": "13.1.0",
     "react-event-listener": "^0.5.1",
-    "react-inspector": "paritytech/react-inspector",
+    "react-inspector": "2.2.0",
     "react-markdown": "3.0.1",
     "scryptsy": "^2.0.0",
     "web3": "1.0.0-beta.26"

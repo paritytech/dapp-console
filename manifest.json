@@ -4,5 +4,6 @@
   "description": "JavaScript console",
   "author": "Parity Team <admin@parity.io>",
   "version": "1.99.99",
-  "iconUrl": "icon.png"
+  "iconUrl": "icon.png",
+  "localUrl": "http://localhost:3001/"
 }
