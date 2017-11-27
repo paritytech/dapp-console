@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
+import 'codemirror/lib/codemirror.css';
 import 'codemirror/addon/dialog/dialog';
 import 'codemirror/addon/dialog/dialog.css';
 import 'codemirror/addon/hint/javascript-hint';
@@ -23,7 +24,6 @@ import 'codemirror/addon/search/match-highlighter';
 import 'codemirror/addon/search/search';
 import 'codemirror/addon/search/searchcursor';
 import 'codemirror/keymap/sublime';
-import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/javascript/javascript';
 
 // Custom codemirror style

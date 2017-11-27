@@ -15,7 +15,7 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 import keycode from 'keycode';
-import { action, computed, map, observable, transaction } from 'mobx';
+import { action, computed, observable, transaction } from 'mobx';
 import store from 'store';
 
 import { evaluate } from '../utils';
@@ -25,7 +25,7 @@ const LS_SNIPPETS_KEY = '_console::snippets';
 let instance;
 
 export default class SnippetsStore {
-  @observable files = map();
+  @observable files = observable.map();
   @observable nextName = null;
   @observable renaming = null;
   @observable selected = null;

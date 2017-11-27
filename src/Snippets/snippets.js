@@ -17,7 +17,8 @@
 import keycode from 'keycode';
 import { observer } from 'mobx-react';
 import React, { Component } from 'react';
-import CodeMirror from 'react-codemirror';
+// import CodeMirror from 'react-codemirror';
+import { Controlled as CodeMirror } from 'react-codemirror2';
 import EventListener from 'react-event-listener';
 
 import Console from '../Console';
@@ -51,24 +52,26 @@ export default class Snippets extends Component {
           </div>
         </div>
         <div className={ styles.code }>
-          <CodeMirror
-            ref={ this.setRef }
-            onChange={ this.handleChange }
-            options={ {
-              autofocus: true,
-              extraKeys: {
-                'Ctrl-Space': 'autocomplete'
-              },
-              keyMap: 'sublime',
-              highlightSelectionMatches: {
-                delay: 0,
-                showToken: false
-              },
-              lineNumbers: true,
-              mode: 'javascript'
-            } }
-            value={ code }
-          />
+          <div>
+            <CodeMirror
+              ref={ this.setRef }
+              onChange={ this.handleChange }
+              options={ {
+                autofocus: true,
+                extraKeys: {
+                  'Ctrl-Space': 'autocomplete'
+                },
+                keyMap: 'sublime',
+                highlightSelectionMatches: {
+                  delay: 0,
+                  showToken: false
+                },
+                lineNumbers: true,
+                mode: 'javascript'
+              } }
+              value={ code }
+            />
+          </div>
           <div className={ styles.console }>
             <Console />
           </div>
@@ -207,12 +210,12 @@ export default class Snippets extends Component {
     this.snippetsStore.select(id);
   };
 
-  setRef = (node) => {
-    const codeMirror = node
-      ? node.getCodeMirror()
-      : null;
+  setRef = () => {
+    // const codeMirror = node
+    //   ? node.getCodeMirror()
+    //   : null;
 
-    this.snippetsStore.setCodeMirror(codeMirror);
+    // this.snippetsStore.setCodeMirror(codeMirror);
   };
 
   stopPropagation = (event) => {

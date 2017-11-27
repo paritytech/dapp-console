@@ -19,6 +19,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .panel {
@@ -57,6 +58,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  overflow: hidden;
 
   > * {
     flex: 1;
