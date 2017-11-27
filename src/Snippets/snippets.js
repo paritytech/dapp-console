@@ -55,7 +55,7 @@ export default class Snippets extends Component {
           <div>
             <CodeMirror
               ref={ this.setRef }
-              onChange={ this.handleChange }
+              onBeforeChange={ this.handleChange }
               options={ {
                 autofocus: true,
                 extraKeys: {
@@ -164,7 +164,7 @@ export default class Snippets extends Component {
     return event;
   };
 
-  handleChange = (value) => {
+  handleChange = (editor, _, value) => {
     this.snippetsStore.edit(value);
   };
 
