@@ -31,14 +31,14 @@
   display: flex;
   padding: 0 1em;
 
-  &.error .result {
-    color: red;
-  }
-
   .result {
     color: #00f;
     font-weight: bold;
     margin-left: 0.5em;
+  }
+
+  &.error .result {
+    color: red;
   }
 }
 
@@ -77,7 +77,7 @@
 
   .input {
     border: none;
-    font: 12px Arial;
+    font: 12px Arial, sans-serif;
 
     &.big {
       width: 300px;
@@ -86,7 +86,7 @@
 
   .button {
     color: black;
-    font: 12px Arial;
+    font: 12px Arial, sans-serif;
     padding: 0 1em;
   }
 }

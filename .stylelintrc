@@ -1,0 +1,3 @@
+{
+  "extends": "react-dapp-scripts/config/stylelint"
+}

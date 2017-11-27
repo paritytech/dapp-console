@@ -58,6 +58,10 @@
   flex: 1;
   flex-direction: column;
 
+  > * {
+    flex: 1;
+  }
+
   .console {
     border-top: 1px solid lightgray;
     max-height: 200px;
@@ -67,10 +71,6 @@
       overflow: auto;
       height: 100%;
     }
-  }
-
-  > * {
-    flex: 1;
   }
 
   :global(.CodeMirror) {
@@ -117,6 +117,6 @@
 
 .input {
   border: none;
-  font: 11px Arial;
+  font: 11px Arial, sans-serif;
   width: 100%;
 }

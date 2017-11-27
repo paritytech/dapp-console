@@ -38,14 +38,14 @@
   margin-top: 2px;
   padding: 2px 6px 2px 4px;
 
-  &:hover,
-  &.active:hover {
-    background-color: #e5e5e5;
-  }
-
   &.active {
     background-color: white;
     border: 1px solid #ccc;
     border-bottom: none;
+  }
+
+  &:hover,
+  &.active:hover {
+    background-color: #e5e5e5;
   }
 }

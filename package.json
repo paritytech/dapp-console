@@ -15,9 +15,7 @@
   "scripts": {
     "build": "NODE_ENV=production react-dapp-scripts build",
     "init": "react-dapp-scripts init",
-    "lint": "npm run lint:css && npm run lint:js",
-    "lint:css": "stylelint ./src/**/*.css",
-    "lint:js": "react-dapp-scripts lint",
+    "lint": "react-dapp-scripts lint",
     "start": "react-dapp-scripts start",
     "test": "echo \"WARN: npm run test skipped\""
   },
@@ -37,9 +35,6 @@
     "web3": "1.0.0-beta.26"
   },
   "devDependencies": {
-    "eslint-config-react-dapp-scripts": "file:/home/nicolas/Workspace/Ethcore/react-dapp-scripts/config/eslint",
-    "react-dapp-scripts": "paritytech/react-dapp-scripts",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0"
+    "react-dapp-scripts": "git://github.com:paritytech/react-dapp-scripts.git"
   }
 }

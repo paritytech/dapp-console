@@ -31,6 +31,11 @@
   display: flex;
   justify-content: space-between;
 
+  .proto {
+    color: gray;
+    margin-left: 1em;
+  }
+
   &.selected {
     background-color: rgb(64, 115, 244);
 
@@ -46,10 +51,5 @@
 
   &:hover:not(.selected) {
     background-color: rgb(230, 236, 255);
-  }
-
-  .proto {
-    color: gray;
-    margin-left: 1em;
   }
 }
