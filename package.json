@@ -35,6 +35,6 @@
     "web3": "1.0.0-beta.26"
   },
   "devDependencies": {
-    "react-dapp-scripts": "git://github.com:paritytech/react-dapp-scripts.git"
+    "react-dapp-scripts": "paritytech/react-dapp-scripts"
   }
 }
