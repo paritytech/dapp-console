@@ -32,8 +32,7 @@
     "react-event-listener": "^0.5.1",
     "react-inspector": "2.2.1",
     "react-markdown": "3.0.2",
-    "scryptsy": "^2.0.0",
-    "web3": "1.0.0-beta.26"
+    "web3": "0.17.0-beta"
   },
   "devDependencies": {
     "react-dapp-scripts": "github:paritytech/react-dapp-scripts"
