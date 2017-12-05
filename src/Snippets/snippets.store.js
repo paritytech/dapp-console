@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-import keycode from 'keycode';
 import { action, computed, observable, transaction } from 'mobx';
 import store from 'store';
 
@@ -29,8 +28,6 @@ export default class SnippetsStore {
   @observable nextName = null;
   @observable renaming = null;
   @observable selected = null;
-
-  codeMirror = null;
 
   constructor () {
     this.load();
@@ -61,12 +58,6 @@ export default class SnippetsStore {
 
     this.renaming = null;
     this.nextName = null;
-  }
-
-  clearCodeHistory () {
-    if (this.codeMirror) {
-      this.codeMirror.doc.clearHistory();
-    }
   }
 
   @action
@@ -199,30 +190,6 @@ export default class SnippetsStore {
   @action
   select (id) {
     this.selected = id;
-
-    // Wait for the file content to be loaded
-    setTimeout(() => {
-      this.clearCodeHistory();
-    }, 50);
-  }
-
-  setCodeMirror (codeMirror) {
-    this.codeMirror = codeMirror;
-
-    if (!codeMirror) {
-      return;
-    }
-
-    this.codeMirror
-      .on('keydown', (_, event) => {
-        const codeName = keycode(event);
-
-        if (codeName === 'enter' && event.ctrlKey) {
-          event.preventDefault();
-          event.stopPropagation();
-          return this.evaluate();
-        }
-      });
   }
 
   @action

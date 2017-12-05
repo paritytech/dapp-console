@@ -54,7 +54,6 @@ export default class Snippets extends Component {
         <div className={ styles.code }>
           <div>
             <CodeMirror
-              ref={ this.setRef }
               onBeforeChange={ this.handleChange }
               options={ {
                 autofocus: true,
@@ -171,11 +170,20 @@ export default class Snippets extends Component {
   handleKeyDown = (event) => {
     const codeName = keycode(event);
 
-    if (codeName === 's' && event.ctrlKey) {
-      event.preventDefault();
-      event.stopPropagation();
+    if (event.ctrlKey) {
+      if (codeName === 's') {
+        event.preventDefault();
+        event.stopPropagation();
 
-      return this.snippetsStore.save();
+        return this.snippetsStore.save();
+      }
+
+      if (codeName === 'enter') {
+        event.preventDefault();
+        event.stopPropagation();
+
+        return this.snippetsStore.evaluate();
+      }
     }
   };
 
@@ -208,14 +216,6 @@ export default class Snippets extends Component {
 
   handleSelectFile = (id) => {
     this.snippetsStore.select(id);
-  };
-
-  setRef = () => {
-    // const codeMirror = node
-    //   ? node.getCodeMirror()
-    //   : null;
-
-    // this.snippetsStore.setCodeMirror(codeMirror);
   };
 
   stopPropagation = (event) => {
