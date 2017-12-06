@@ -1,0 +1,9 @@
+{
+  "github": {
+    "release": true,
+    "assets": "dist.tar.gz"
+  },
+  "npm": {
+    "publish": false
+  }
+}
