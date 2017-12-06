@@ -4,6 +4,6 @@
     "assets": "dist/bundle.zip"
   },
   "npm": {
-    "publish": false
+    "private": true
   }
 }
