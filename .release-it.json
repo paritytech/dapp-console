@@ -1,7 +1,7 @@
 {
   "github": {
     "release": true,
-    "assets": "dist.zip"
+    "assets": "dist/bundle.zip"
   },
   "npm": {
     "publish": false
