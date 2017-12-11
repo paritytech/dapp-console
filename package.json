@@ -13,11 +13,9 @@
   },
   "keywords": [],
   "scripts": {
-    "build": "NODE_ENV=production react-dapp-scripts build",
-    "init": "react-dapp-scripts init",
-    "lint": "react-dapp-scripts lint",
-    "start": "react-dapp-scripts start",
-    "test": "echo \"WARN: npm run test skipped\""
+    "build": "parity-react-dapp build",
+    "lint": "parity-react-dapp lint",
+    "start": "parity-react-dapp start"
   },
   "dependencies": {
     "@parity/api": "2.1.5",
@@ -34,7 +32,6 @@
     "web3": "0.17.0-beta"
   },
   "devDependencies": {
-    "react-dapp-scripts": "github:paritytech/react-dapp-scripts",
-    "release-it": "5.0.0"
+    "parity-react-dapp": "file:///home/nicolas/Workspace/Ethcore/parity-react-dapp"
   }
 }

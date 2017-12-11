@@ -33,4 +33,6 @@ import './style.css';
 // import '@parity/shared/assets/fonts/Roboto/font.css';
 // import '@parity/shared/assets/fonts/RobotoMono/font.css';
 
-export default from './Application';
+import Application from './Application';
+
+export default Application;

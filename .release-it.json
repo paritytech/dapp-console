@@ -1,9 +1,0 @@
-{
-  "github": {
-    "release": true,
-    "assets": "dist/bundle.zip"
-  },
-  "npm": {
-    "private": true
-  }
-}

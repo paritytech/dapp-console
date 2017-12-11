@@ -60,5 +60,5 @@ typings/
 # dotenv environment variables file
 .env
 
-# The `dist` directory
-dist/
+# The `build` directory
+build/
