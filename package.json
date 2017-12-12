@@ -1,7 +1,7 @@
 {
   "name": "@parity/dapp-console",
   "description": "Parity console dapp",
-  "version": "1.99.105",
+  "version": "1.99.106",
   "main": "index.js",
   "author": "Parity Team <admin@parity.io>",
   "maintainers": [],
@@ -13,9 +13,9 @@
   },
   "keywords": [],
   "scripts": {
-    "build": "parity-react-dapp build",
-    "lint": "parity-react-dapp lint",
-    "start": "parity-react-dapp start"
+    "build": "parity-react-scripts build",
+    "lint": "parity-react-scripts lint",
+    "start": "parity-react-scripts start"
   },
   "dependencies": {
     "@parity/api": "2.1.5",
@@ -29,9 +29,10 @@
     "react-element-to-jsx-string": "13.1.0",
     "react-event-listener": "^0.5.1",
     "react-inspector": "2.2.1",
+    "release-it": "5.1.2",
     "web3": "0.17.0-beta"
   },
   "devDependencies": {
-    "parity-react-dapp": "file:///home/nicolas/Workspace/Ethcore/parity-react-dapp"
+    "parity-react-scripts": "github:paritytech/parity-react-scripts#70ea51d"
   }
 }
