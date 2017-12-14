@@ -1,5 +1,8 @@
 {
   "id": "0xa4362a604249c73045cdae275909c48508bdad767fe019344d38f68301c9467e",
   "name": "dapp-console",
-  "iconUrl": "icon.png"
+  "iconUrl": "icon.png",
+  "author": "Parity Team <admin@parity.io>",
+  "version": "1.99.109",
+  "description": "Parity console dapp"
 }
