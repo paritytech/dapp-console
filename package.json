@@ -19,20 +19,20 @@
     "start": "parity-react-scripts start"
   },
   "dependencies": {
-    "@parity/api": "2.1.5",
+    "@parity/api": "2.1.14",
     "codemirror": "5.32.0",
     "keycode": "2.1.9",
-    "mobx": "3.3.3",
-    "mobx-react": "^4.3.5",
+    "mobx": "3.4.1",
+    "mobx-react": "4.3.5",
     "react": "16.2.0",
     "react-codemirror2": "3.0.7",
     "react-dom": "16.2.0",
     "react-element-to-jsx-string": "13.1.0",
-    "react-event-listener": "^0.5.1",
-    "react-inspector": "2.2.1",
-    "web3": "0.17.0-beta"
+    "react-event-listener": "0.5.2",
+    "react-inspector": "2.2.2",
+    "web3": "0.19.0"
   },
   "devDependencies": {
-    "parity-react-scripts": "github:paritytech/parity-react-scripts#de6b08c"
+    "parity-react-scripts": "github:paritytech/parity-react-scripts"
   }
 }
