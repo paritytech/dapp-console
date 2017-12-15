@@ -1,7 +1,7 @@
 {
   "name": "@parity/dapp-console",
   "description": "Parity console dapp",
-  "version": "1.99.119",
+  "version": "1.99.120",
   "main": "index.js",
   "author": "Parity Team <admin@parity.io>",
   "maintainers": [],
@@ -33,6 +33,6 @@
     "web3": "0.19.0"
   },
   "devDependencies": {
-    "parity-react-scripts": "github:paritytech/parity-react-scripts"
+    "parity-react-scripts": "github:paritytech/parity-react-scripts#45796030fede400191a4afbba8c1d9939c167e4a"
   }
 }
