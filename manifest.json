@@ -3,6 +3,6 @@
   "name": "dapp-console",
   "iconUrl": "icon.png",
   "author": "Parity Team <admin@parity.io>",
-  "version": "1.99.122",
+  "version": "1.99.100",
   "description": "Parity console dapp"
 }
