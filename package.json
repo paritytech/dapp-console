@@ -14,9 +14,11 @@
   "keywords": [],
   "scripts": {
     "build": "parity-react-scripts build",
+    "init": "parity-react-scripts init",
     "lint": "parity-react-scripts lint",
     "publish": "parity-react-scripts publish",
-    "start": "parity-react-scripts start"
+    "start": "parity-react-scripts start",
+    "test": "npm run lint && parity-react-scripts test"
   },
   "dependencies": {
     "@parity/api": "2.1.14",
@@ -33,6 +35,6 @@
     "web3": "0.19.0"
   },
   "devDependencies": {
-    "parity-react-scripts": "github:paritytech/parity-react-scripts#45796030fede400191a4afbba8c1d9939c167e4a"
+    "parity-react-scripts": "github:paritytech/parity-react-scripts#65701fb"
   }
 }

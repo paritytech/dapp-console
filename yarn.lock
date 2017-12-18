@@ -5648,9 +5648,9 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
-"parity-react-scripts@github:paritytech/parity-react-scripts#45796030fede400191a4afbba8c1d9939c167e4a":
+"parity-react-scripts@github:paritytech/parity-react-scripts#65701fb":
   version "0.2.0"
-  resolved "git+ssh://git@github.com/paritytech/parity-react-scripts.git#45796030fede400191a4afbba8c1d9939c167e4a"
+  resolved "git+ssh://git@github.com/paritytech/parity-react-scripts.git#65701fb6a5e8124a28b5b6246bc66c65d2b00428"
   dependencies:
     "@parity/api" "^2.1.13"
     "@parity/shared" "^2.2.14"
@@ -5682,6 +5682,7 @@ param-case@2.1.x:
     eslint-plugin-standard "3.0.1"
     fs-extra "5.0.0"
     inquirer "^4.0.1"
+    lodash "^4.17.4"
     lodash.merge "^4.6.0"
     minimist "^1.2.0"
     node-fetch "^1.7.3"
@@ -5692,6 +5693,7 @@ param-case@2.1.x:
     postcss-simple-vars "4.1.0"
     react-scripts-config "1.0.17-4"
     release-it "github:paritytech/release-it#ng-poc"
+    semver "^5.4.1"
     stylelint "8.3.1"
     stylelint-config-standard "18.0.0"
 
@@ -7136,7 +7138,7 @@ semver-diff@^2.0.0:
   dependencies:
     semver "^5.0.3"
 
-"semver@2 || 3 || 4 || 5", semver@5.4.1, semver@^5.0.1, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0:
+"semver@2 || 3 || 4 || 5", semver@5.4.1, semver@^5.0.1, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
@@ -7293,7 +7295,7 @@ sockjs@0.3.18:
     faye-websocket "^0.10.0"
     uuid "^2.0.2"
 
-"solc@github:ngotchac/solc-js":
+solc@ngotchac/solc-js:
   version "0.4.4"
   resolved "https://codeload.github.com/ngotchac/solc-js/tar.gz/04eb38cc3003fba8cb3656653a7941ed36408818"
   dependencies:
